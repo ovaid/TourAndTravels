@@ -1384,3 +1384,49 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
       content: "\f095"; }
     .site-footer ul.quick-info li.address:before {
       content: "\e8b4"; }
+
+
+      #map {
+        width: 100%;
+        height: 500px; /* Adjust the height to your preference */
+        border: 2px solid #ddd;
+        margin-top: 20px;
+    }
+  
+    
+    .whatsapp-icon {
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      z-index: 9999;
+      transition: transform 0.3s ease; /* Smooth transition for transform */
+  }
+  
+  .whatsapp-icon img {
+      width: 60px;
+      height: 60px;
+      transition: transform 0.3s ease; /* Smooth zoom effect */
+  }
+  
+  /* Zoom-in effect on hover */
+  .whatsapp-icon:hover img {
+      transform: scale(1.2); /* Scale the image by 1.2 times */
+  }
+  
+  /* Phone Icon */
+  .phone-icon {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 9999;
+  }
+  
+  .phone-icon img {
+      width: 60px;
+      height: 60px;
+      transition: transform 0.3s ease; /* Smooth zoom effect */
+  }
+  
+  .phone-icon:hover img {
+      transform: scale(1.2); /* Zoom-in effect on hover */
+  }

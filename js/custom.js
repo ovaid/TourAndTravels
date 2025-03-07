@@ -250,3 +250,30 @@ $(function(){
 		$('input[name="daterange"]').daterangepicker();
 	}
 })
+function initMap() {
+    // Map initialization options
+    const mapOptions = {
+        center: { lat: 34.118876, lng: 74.7955712 }, // Emin Tour and Travels location
+        zoom: 17, // Adjust the zoom level for better view
+    };
+
+    // Create a new map instance
+    const map = new google.maps.Map(document.getElementById("map"), mapOptions);
+
+    // Add a marker at Emin Tour and Travels location
+    const marker = new google.maps.Marker({
+        position: mapOptions.center,
+        map: map,
+        title: "Emin Tour and Travels"
+    });
+}
+
+
+// If you want to log clicks (Optional)
+document.querySelector('.whatsapp-icon').addEventListener('click', function() {
+    console.log('WhatsApp icon clicked');
+});
+
+document.querySelector('.phone-icon').addEventListener('click', function() {
+    console.log('Phone icon clicked');
+});
